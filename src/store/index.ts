@@ -6,6 +6,6 @@ function useStore() {
   return { TagStore: useTagStore(), InitStore: useInitStore(), RecordStore: useRecordStore() };
 }
 
-export const NativeStore = { useTagStore, useRecordStore, useInitStore };
+export const nativeStore = { useTagStore, useRecordStore, useInitStore };
 
 export default useStore;

@@ -1,0 +1,28 @@
+@import "@/assets/style/helper.scss";
+
+.tabs {
+  @extend %center;
+  background: $bg;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  min-height: 48px;
+
+  &-item {
+    @extend %center;
+    width: 20%;
+    min-height: 38px;
+    position: relative;
+    margin-bottom: -15px;
+
+    &.selected::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #333;
+    }
+  }
+}

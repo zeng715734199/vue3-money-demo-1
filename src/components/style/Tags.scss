@@ -1,0 +1,38 @@
+@import "@/assets/style/helper.scss";
+
+.tags {
+  padding: 20px;
+  min-height: 54vh;
+  > ul {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    > li {
+      @extend %center;
+      margin: 5px;
+      padding: 3px 10px;
+      font-size: 16px;
+      font-weight: 600;
+      border: 3px solid #000;
+      border-radius: 8px;
+      background: #fefffe;
+
+      &.new {
+        background: #f2a39f;
+      }
+
+      &.selected {
+        background: rgb(200, 226, 216);
+        border: 3px solid $bg;
+      }
+
+      > .icon {
+        min-width: 30px;
+        min-height: 30px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

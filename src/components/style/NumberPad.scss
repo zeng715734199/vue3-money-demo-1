@@ -1,0 +1,53 @@
+@import '@/assets/style/helper.scss';
+
+.numberPad {
+  background: $bg;
+  .buttons {
+    .empty {
+      width: 25%;
+    }
+
+    .output {
+      @extend %innerShadow;
+      width: 75%;
+      height: 45px;
+      font-size: 25px;
+      font-family: Consolas, monospace;
+      text-align: right;
+      float: right;
+      padding: 4px 14px;
+      display: block;
+      border: 3px solid black;
+      border-radius: 10px;
+      background: rgb(254, 255, 254);
+    }
+
+    > button {
+      width: 25%;
+      height: 45px;
+      background: $bg;
+      border: none;
+      padding: 3px;
+
+      &.ok {
+        height: 45 * 4px;
+        font-size: 24px;
+        float: right;
+        font-weight: 700;
+
+        > span {
+          background: rgb(254, 204, 2);
+        }
+      }
+
+      > span {
+        @extend %center;
+        border: 3px solid black;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        background: rgb(254, 255, 254);
+      }
+    }
+  }
+}

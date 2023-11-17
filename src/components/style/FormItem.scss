@@ -1,0 +1,22 @@
+.notes {
+  font-size: 14px;
+  background: #fefffe;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+  box-shadow: 3px 3px 3px 3px #e6e6e6;
+
+  .name {
+    padding-right: 16px;
+    color: #60a69b;
+    font-weight: 600;
+  }
+
+  input {
+    min-height: 6vh;
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    padding-right: 16px;
+  }
+}
