@@ -1,0 +1,65 @@
+.noResult {
+  padding: 16px;
+  text-align: center;
+}
+%item {
+  padding: 8px 16px;
+  line-height: 30px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.title {
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background: #fefffe;
+  margin: 10px 0;
+  border-bottom: 3px solid #e6e6e6;
+  > .date {
+    height: 44px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2a39f;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  > .expense {
+    padding: 10px;
+  }
+}
+
+.record {
+  @extend %item;
+  background: #fefffe;
+  border-bottom: 3px solid #e6e6e6;
+}
+
+.notes {
+  margin-right: auto;
+  margin-left: 16px;
+  color: #999;
+}
+
+::v-deep {
+  .type-tabs-item {
+    background: white;
+
+    &.selected {
+      background: #c4c4c4;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .interval-tabs-item {
+    height: 48px;
+  }
+}
