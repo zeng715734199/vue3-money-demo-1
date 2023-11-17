@@ -38,10 +38,6 @@
     "src/**/*.vue",
     "types/**/*.d.ts",
     "types/**/*.ts",
-    "preview/**/*.ts",
-    "preview/**/*.d.ts",
-    "preview/**/*.tsx",
-    "preview/**/*.vue",
     "components.d.ts",
     "auto-imports.d.ts"
   ],

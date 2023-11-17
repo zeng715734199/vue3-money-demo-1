@@ -1,8 +1,9 @@
 import { defineComponent } from 'vue';
-
+import { useDayjs } from "@/lib/global";
 export default defineComponent({
   name: 'Statistics',
   setup() {
+    const dayjs = useDayjs()
     const tagString = (tags: Tag[])  => {
       return tags.length === 0 ? '无' :
         tags.map(t=>t.name).join('，');

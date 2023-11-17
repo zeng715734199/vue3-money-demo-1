@@ -1,5 +1,5 @@
 import { resolve } from 'path';
-import { ConfigEnv, loadEnv, UserConfig } from 'vite';
+import { ConfigEnv, UserConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import { VantResolver } from 'unplugin-vue-components/resolvers';
@@ -8,7 +8,7 @@ import Components from 'unplugin-vue-components/vite';
 import checker from 'vite-plugin-checker';
 import DefineOptions from 'unplugin-vue-define-options/vite';
 
-const CWD = process.cwd();
+// const CWD = process.cwd();
 
 const prefix = `monaco-editor/esm/vs`;
 

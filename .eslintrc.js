@@ -77,7 +77,7 @@ module.exports = {
     'vue/require-explicit-emits': 'off',
     'vue/multi-word-component-names': 'off',
     'vue/one-component-per-file': 'off',
-
+    'vue/no-reserved-component-names': 'off',
     // prettier
     'prettier/prettier': 'error',
 

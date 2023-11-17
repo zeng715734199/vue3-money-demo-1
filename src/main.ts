@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import dayjs from 'dayjs';
-import _ from 'lodash-es';
+import _ from 'lodash';
 import { nanoid } from 'nanoid';
 import App from './App.vue';
 import router from './router';
